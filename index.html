@@ -1,0 +1,491 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Segunda Aplicacion</title>
+
+<!--grupo css-->
+<link rel="stylesheet" href="css/app3.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/Ciudad.jpg','imagenes/Iglesia.jpg','imagenes/Gravillados.jpg','imagenes/Zocalo.jpg','imagenes/Zocalo2.jpg','imagenes/Reciclage.jpg','imagenes/CAM01545.jpg','imagenes/CAM01544.jpg','imagenes/CAM01543.jpg','imagenes/CAM01541.jpg','imagenes/ContaminacionSuelo.jpg','imagenes/ContaminacionAire.jpg','imagenes/ContaminacionAgua.jpg','imagenes/ContaminacionAgustica.jpg','imagenes/ContaminacionVisual.jpg')">
+  <div data-role="page" id="Principal" data-theme="b">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      <h1>CONTAMINACION</h1>
+     </div>
+     <div data-role="main" class="ui-content">
+          <center>   
+           <img src="imagenes/Contaminacion.jpg" width="50%" height="50%">
+          </center>
+     </div>
+          
+      
+<div>
+   <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+    <li class="ui-first-child ui-last-child">
+     <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>¿Que es la Contaminación?</h2>
+     </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+     <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>Causas y Consecuencias</h2>
+     </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+     <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>Medidas Preventivas</h2>
+     </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+     <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>Tipos de Contaminacion</h2>
+     </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+     <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>Forma de Actuar</h2>
+     </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+     <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>Tipos de Contaminacion en mi Comunidad y como Actuar</h2>
+     </a>
+    </li>
+   </ul>
+</div>
+<div data-role="footer" align="center" data-theme="b" data-position="fixed">
+   <div>
+     <h4>Aplicacion Dos</h4>
+     <img src="imagenes/Places-trash-full-icon.png" width="46" height="46">
+     <h4>Alfonso Miguel Perez Faustino</h4>
+   </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+    <h1>¿Que es la contaminación?</h1>
+   </div>
+   <div data-role="content" align="center">
+       <p>
+        La contaminación es la introducción de sustancias en un medio que provocan que este sea inseguro o no apto para su uso. El medio puede ser un ecosistema, un medio físico o un ser vivo. El contaminante puede ser una sustancia química, energía (como sonido, calor, luz o radiactividad).
+       </p>
+        <br>
+       <p>
+        Es siempre una alteración negativa del estado natural del medio, y por lo general, se genera como consecuencia de la actividad humana considerándose una forma de impacto ambiental.
+       </p>
+        <br>
+       <p>
+        La contaminación puede clasificarse según el tipo de fuente de donde proviene, o por la forma de contaminante que emite o medio que contamina. Existen muchos agentes contaminantes entre ellos las sustancias químicas (como plaguicidas, cianuro, herbicidas y otros.), los residuos urbanos, el petróleo, o las radiaciones ionizantes. Todos estos pueden producir enfermedades, daños en los ecosistemas o el medioambiente. Además existen muchos contaminantes gaseosos que juegan un papel importante en diferentes fenómenos atmosféricos, como la generación de lluvia ácida, el debilitamiento de la capa de ozono, y el cambio climático.
+       </p>
+        <br>
+       <p>
+        Hay muchas formas de combatir la contaminación, y legislaciones internacionales que regulan las emisiones contaminantes de los países que adhieren estas políticas. La contaminación está generalmente ligada al desarrollo económico y social. Actualmente muchas organizaciones internacionales como la ONU ubican al desarrollo sostenible como una de las formas de proteger al medioambiente para las actuales y futuras generaciones.
+       </p>
+        <img src="imagenes/Queescontaminacion.jpg"/>
+   <div data-role="collapsible" align="center">
+    <h2>Primeros Registros de Contaminacion</h2>
+     <div>
+       <p>
+        En 1272 Eduardo I de Inglaterra en una proclamación prohibió la quema de carbón en Londres, cuando la contaminación atmosférica en la ciudad se convirtió en un problema.
+       </p>
+        <br>
+       <p>
+        La contaminación del aire continuó siendo un problema en Inglaterra, especialmente con la llegada de la revolución industrial. Londres también registró uno de los casos más extremos de contaminación del agua con aguas residuales durante el Gran Hedor del Río Támesis en 1858, esto dio lugar que poco después a la construcción del sistema de alcantarillado de Londres. Fue la revolución industrial la que inició la contaminación como un problema medioambiental. La aparición de grandes fábricas y el consumo de inmensas cantidades de carbón y otros combustibles fósiles aumentaron la contaminación del aire y ocasionando un gran volumen de vertidos de producto químicos industriales al ambiente, a los que hay que sumar el aumento de residuos humanos no tratados.
+       </p>
+        <br>
+       <p>
+        En 1881 Chicago y Cincinnati fueron las dos primeras ciudades estadounidenses en promulgar leyes para garantizar el aire limpio. Otras ciudades estadounidenses siguieron el ejemplo durante principios del siglo XX, cuando se creó un pequeño Departamento de Contaminación del Aire, dependiente del Departamento del Interior. Los Ángeles y Donora (Pensilvania) experimentaron grandes cantidades de smog durante la década del 1940.
+       </p>
+        <!-- Start WOWSlider.com -->
+<iframe src="visor/indexwow.html" style="width:800px;height:600px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+     </div>
+   </div>
+   <div data-role="collapsible" align="center">
+    <h2>La contaminacion a Nivel Local</h2>
+     <div>
+       <p>
+        La contaminación se convirtió en un asunto de gran importancia tras la Segunda Guerra Mundial, después de que se hiciesen evidentes las repercusiones de la lluvia radiactiva ocasionada por las guerras y ensayos nucleares. En 1952 ocurriría un evento catastrófico de tipo local, conocido como la Gran Niebla de 1952 en Londres, que mató a unas 4 000 personas. Este trágico evento motivó la creación de una de las más importantes leyes modernas sobre el medio ambiente: la Ley del Aire Limpio de 1956.
+       </p>
+        <br>
+       <p>
+        En los Estados Unidos la contaminación comenzó a recibir la atención pública a mediados de la década de 1950 y a principios de los años 1970, fechas que coinciden con la creación y aprobación de la Ley del Aire Limpio, la Ley del Agua Limpia, la Ley de Política Ambiental de los Estados Unidos y la Ley del Ruido. da Algunos sucesos han ayudado a concienciar a la gente sobre los efectos negativos de la contaminación en los Estados Unidos. Entre estos se encuentra el vertido de bifenilos policlorados (PCB) en el río Hudson por parte de la compañía General Electric, dando como resultado el establecimiento de una serie de prohibiciones emitidas en 1974 por la EPA, como la pesca en sus aguas. Otro suceso es el desastre ecológico en el barrio de Love Canal en Niagara Falls. El conjunto residencial de Love Canal fue construido sobre un terreno en el cual la empresa Hooker Chemical and Plastics Corporation había enterrado en 1947 residuos químicos y dioxinas. Así, en 1978 los habitantes de Love Canal tuvieron que abandonar sus viviendas al descubrirse filtraciones de agua en la superficie con materiales cancerígenos disueltos, convirtiéndose así en una noticia a nivel nacional, y promoviendo la creación en 1980 de la Ley de Superfondo (en inglés «Superfund»), donde se incluye una lista de los agentes contaminantes más peligrosos.
+       </p>
+        <br>
+       <p>
+        Con el desarrollo de la ciencia nuclear apareció la contaminación radioactiva, la cual puede permanecer en el ambiente de manera letalmente radioactiva por millones de años.11 Los países dedicados a la experimentación y fabricación de armas nucleares producen desechos militares radioactivos, y en varios casos, el no haberlos depositado en lugares seguros ha causado desastres ecológicos. En las décadas de 1950 y 1960, cuando aún existía la Unión Soviética, los desechos radioactivos producidos por la instalación nuclear Mayak fueron arrojados en el lago Karachai y en el río Techa, ocasionando casos de leucemia en la población y afectando directamente a la provincia de Cheliábinsk. De acuerdo con el Worldwatch Institute, el lago Karachai era el sitio «más contaminado de la Tierra.
+       </p>
+        <br>
+       <p>
+        En la Guerra Fría se realizaron ensayos con armas nucleares, algunas veces cerca de zonas habitadas y con mayor frecuencia durante las primeras etapas de investigación y desarrollo armamentístico. El impacto negativo que ha tenido la contaminación nuclear sobre las poblaciones, y el progresivo entendimiento de los efectos de la radioactividad en la salud humana, son también algunas de las dificultades que complican el uso de la energía nuclear.[cita requerida] La posibilidad de que ocurra una catástrofe como en los accidentes de Three Mile Island y Chernóbil hace desconfiar al público.[cita requerida] Uno de los legados de las detonaciones y ensayos nucleares, antes de que se instaurasen la mayoría de prohibiciones y tratados nucleares, fue el considerable incremento de los niveles de radioactividad.
+       </p>
+        <!-- Start WOWSlider.com -->
+<iframe src="visor1/indexwow.html" style="width:1010px;height:380px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+     </div>
+   </div>
+  </div>
+   <div data-role="footer" data-theme="a" align="center" data-position="fixed">
+    <h4>Aplicacion Dos</h4>
+     <img src="imagenes/Places-trash-full-icon.png" width="46" height="46">
+    <h4>Alfonso Miguel Perez Faustino</h4>
+   </div>
+</div>
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      <h1>Causas y Consecuencias</h1>
+   </div>
+   <div data-role="content" align="center">
+       <p>
+        La contaminación se produce cuando los residuos contaminan el entorno natural; trayendo como consecuencias cambios que afectan a nuestro estilo de vida normal, de manera perjudicial. Los residuos son los elementos principales de la contaminación. La contaminación altera nuestro ecosistema y el equilibrio del medio ambiente.
+       </p>
+       <img src="imagenes/La-contaminacion-ambiental-origina-la-erosion-de-la-tierra.jpg.jpg" width="259" height="194">
+   <div data-role="collapsible" align="center">
+    <h2>Causas</h2>
+     <div>
+       <p>
+        El tráfico rodado: los coches y camiones son los mayores contaminantes urbanos porque a diario circulan arrojando al aire gases tóxicos perjudiciales para la salud. Estos vehículos contaminan a causa de la combustión de los hidrocarburos que utilizan para moverse, y el desgaste de los frenos y  ruedas.
+       </p>
+        <br>
+       <p>
+        En las ciudades existe otra fuente de contaminación como son las construcciones y las demoliciones: estas actividades desprenden polvos y gases que dañan el aire de la zona en que se desarrollan,  y  a su vez contaminan el agua donde arrojan sus desechos.
+       </p>
+        <br>
+       <p>
+         Los Combustibles fósiles: el confort  y el bienestar de los habitantes de las grandes ciudades trajo como consecuencia el aumento en el consumo de combustibles fósiles. La producción de carbón, de petróleo y de gas natural crece de la mano del ascenso de los niveles de contaminación del aire, del suelo y del agua del planeta.
+       </p>
+        <br>
+       <p>
+        La deforestación: la tala indiscriminada en bosques y selvas impide que los árboles, encargados de purificar el aire, realicen esta tarea y que miles de animales y plantas se extingan por no tener un lugar donde vivir y crecer.
+       </p>
+       <img src="imagenes/Causa.jpg" width="259" height="194">
+     </div>
+     </div>
+   <div data-role="collapsible" align="center">
+    <h2>Consecuencias</h2>
+     <div>
+       <p>
+        Problemas para la salud: la contaminación hace que las personas estemos cada vez más expuestas a padecer problemas cardiovasculares, con el grave peligro que esto entraña para nuestra salud y vida.
+       </p>
+        <br>
+       <p>
+        Debilitamiento de la capa de ozono: la capa de ozono es la que nos protege de los rayos del Sol, los cuales pueden llegar a ser mortíferos sin esta capa. la consecuencia de este debilitamiento es que cada vez nos protege menos y, por ende, cada vez tenemos una mayor temperatura en el planeta. Esto no solo hace que cada vez haya más zonas desiertas en las que es imposible vivir, sino que también hace que el hielo en los polos se deshaga y mueran muchas especies por ello. No hace falta mencionar que esto hace subir indudablemente el nivel del mar y que, de seguir así, muchas ciudades costeras se verán arrasadas, quedándose sin playas y sin zona costera.
+       </p>
+        <br>
+       <p>
+        La contaminación afecta al suelo y al agua: la contaminación al medio ambiente afecta al agua y al suelo, lo que hace que cada vez haya más especies en peligro de extinción. El agua no es potable en una gran cantidad de sitios y el suelo para la siembre no tiene los nutrientes necesarios, lo que hace que cada vez se pueda cultivar menos y que el número de cosechas para nuestro sustento sea cada vez menor.
+       </p>
+        <br>
+       <p>
+        La contaminación afecta al clima: seguro que ya te has dado cuenta que los inviernos pueden ser mucho más fríos o que los veranos son mucho más calurosos, a la vez que seguro te has dado cuenta que las estaciones como el invierno y el verano pueden ser más largas y que las de temperaturas medias, son cada vez más cortas. Todos estos cambios y los fenómenos que no se habían visto desde  hace mucho tiempo o incluso nunca se habían visto son causados por la contaminación.
+       </p>
+       <img src="imagenes/Consecuencia.jpg" width="259" height="194">
+     </div>
+     </div>
+   </div>
+   <div data-role="footer" data-theme="a" align="center" data-position="fixed">
+    <h4>Aplicacion Dos</h4>
+     <img src="imagenes/Places-trash-full-icon.png" width="46" height="46">
+    <h4>Alfonso Miguel Perez Faustino</h4>
+   </div>
+</div>
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      <h1>Medidas Preventivas de Contaminacion</h1>
+   </div>
+   <div data-role="content" align="center">
+       <p>
+        La prevención de la contaminación ambiental representan un enfoque que se orienta a evi-tar y/o reducir la misma, con el fin de preservar la calidad ambiental o minimizar el impacto sobre los ecosistemas.
+       </p>
+        <br>
+       <p>
+        Este cambio exige la participación de los diversos actores involucrados en la problemática ambiental fronteriza y debe incluir acciones, proyectos y programas vinculados con la edu-cación y legislación ambiental, uso eficiente de recursos, reuso y reciclamiento de productos y desechos y demás aspectos relativos.
+       </p>
+   <div data-role="collapsible" align="center">
+    <h2>Prevención de la contaminación</h2>
+     <div>
+       <p>
+        Uno de los esfuerzos más importantes que contribuye de manera efectiva a mejorar el esta-do del medio ambiente y de los recursos naturales es, sin lugar a dudas, la prevención de la contaminación ambiental inducida por la acción humana, misma que afecta la integridad física, biológica, química y radiológica del medio ambiente. Considerando que la contamina-ción ambiental es causada por la presencia de materia o energía cuya naturaleza, ubicación o cantidad produce efectos ambientales indeseables, el concepto de prevención, debe in-cluir dos tipos de acercamientos fundamentales: la prevención ambiental primaria orientada a evitar la contaminación y como consecuencia, a preservar el medio ambiente y los recur-sos naturales libres de agentes contaminantes, y la prevención ambiental secundaria enfo-cada a reducir la contaminación que tenga efectos adversos sobre los ecosistemas.
+       </p>
+        <br>
+       <p>
+        En los programas de prevención se encuentran involucradas diversas estrategias de acción para evitar, reducir y/o eliminar la contaminación desde su generación o fuente. A su vez, la reducción de la contaminación incluye tres vertientes; la reducción del volumen, toxicidad y/o de ambas.
+       </p>
+        <br>
+       <p>
+        En materia de prevención de la contaminación ambiental, existen acciones muy concretas que promueven tanto programas de prevención, como de atención a contingencias ambien-tales y aplicación de la ley, en donde se pueden ver acciones en dos grandes rubros, audi-torias ambientales voluntarias y actividades de inspección y vigilancia.
+       </p>
+        <img src="imagenes/Prevencion.png"/>
+        <img src="imagenes/PrevencionContaminacion.jpg"/>
+     </div>
+    </div>
+    <div data-role="collapsible" align="center">
+    <h2>Programas de Prevencion</h2>
+     <div>
+       <p>
+        El Instituto Nacional de Ecología se ha preocupado por impulsar programas de prevención de la contaminación en diferentes sectores. Como parte de este esfuerzo, se ha involucrado a instituciones de educación y organismos empresariales. En la frontera norte, el Grupo de Prevención de la Contaminación del Programa Frontera XXI ha desarrollado algunas accio-nes entre las que se encuentra la publicación de manuales bilingües sobre la prevención de la contaminación para giros seleccionados, elaborados por EPA/SEDESOL en 1993 y EPA/SEMARNAP en 1996.
+       </p>
+        <br>
+       <p>
+        Para el sector industrial, la prevención de la contaminación se ha vuelto un factor crítico pa-ra ser competitivo, por lo que los programas de prevención incluyen estrategias como:
+       </p>
+        <br>
+       <p>
+        Mejor administración de inventarios para evitar el desperdicio de materias primas.
+       </p>
+       <p>
+        Minimización de residuos a través de la reingeniería de procesos, equipo y/o productos, con programas integrales de mantenimiento.
+       </p>
+       <p> 
+        Uso eficiente de los recursos; agua, energía, etc.
+       </p>
+       <p>
+        Reuso y reciclaje de subproductos y desechos.
+       </p>
+       <p>
+        Cambio de tecnologías que inclusive utilizan materiales menos contaminantes o produc-tos reciclables.
+       </p>
+       <p>
+        Auditorias ambientales de los procesos para identificar procesos o pasos productivos donde existe potencial de mejora ambiental.
+       </p>
+        <br>
+       <p>
+        Con la aplicación de estos conceptos, el Fondo para la Defensa del Medio Ambiente (EDF-Environmental Defense Fund) en colaboración con el Tecnológico de Monterrey y otras ins-tituciones ha instrumentado un proyecto piloto en Matamoros, Tamaulipas y busca la posibi-lidad de ampliar el programa a otras ciudades en la frontera. El proyecto tiene como objeti-vo, trabajar estrechamente con las empresas para la creación de un sistema práctico y voluntario, que identifique oportunidades económicamente viables en materia de “produc-ción más limpia,” así como acciones dirigidas a la conservación de recursos naturales. Con este proyecto se pretende demostrar que en la ejecución de dichas acciones ambientales se pueden lograr ahorros en los costos de operación a través de mejoras en la eficiencia del proceso industrial, esto en un espíritu de ganar-ganar. De esta forma, se puede proveer asistencia técnica y acceso a recursos de información a empresas ubicadas dentro de par-ques industriales en México con el fin de mejorar sus prácticas de gestión ambiental y simultáneamente promover su eficiencia, competitividad y rentabilidad.
+       </p>
+        <img src="imagenes/Proteccion.jpg"/>
+        <img src="imagenes/EscuelaLimpia.jpg"/>
+     </div>
+    </div>
+   </div>
+   <div data-role="footer" data-theme="a" align="center" data-position="fixed">
+    <h4>Aplicacion Dos</h4>
+     <img src="imagenes/Places-trash-full-icon.png" width="46" height="46">
+    <h4>Alfonso Miguel Perez Faustino</h4>
+   </div>
+</div>
+
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>Tipos de Contaminacion</h1>
+   </div>
+   <div data-role="content" align="center">
+      <h2></h2>
+       <p>
+        Como se sabe el problema de la contaminación es algo que nos compete a todos al ver como nuestro medio ambiente se deteriora con el paso de los días y el crecimiento industrial crece velozmente sin tomar en cuenta los daños que ocasión con sus desechos tóxicos. Pero, ¿Qué hacemos como sociedad para evitar esto? Sabemos de la existencia de sociedades al cuidado del medio ambiente pero ¿Cuántos nos unimos a la causa? Sabiendo que es en beneficio de nosotros mismos y futuras generaciones. Aquí mencionaremos los tipos de contaminación y sus efectos en el ser humano para tratar de hacer conciencia y ponernos en acción con una estrategia que se planteara más adelante.
+       </p>
+   <div data-role="collapsible" align="center">
+    <h2>Contaminacion del Suelo</h2>
+     <div>
+       <p>
+        El suelo es un constituyente normal de la Naturaleza, con componentes minerales y orgánicos y con componentes biológicos constituidos por organismos que viven en él.
+       </p>
+        <br>
+       <p>
+        La contaminación del suelo: es la incorporación al suelo de materias extrañas, como basura, desechos tóxicos, productos químicos, y desechos industriales, este tipo de contaminación produce un desequilibrio físico, químico y biológico que afecta negativamente las plantas, animales y humanos.
+       </p>
+        <br>
+       <p>
+        El uso de abonos, la sedimentación de contaminantes atmosféricos de origen industrial, los vertidos industriales y los depósitos y escombreras producen alteraciones en los suelos difícilmente cuantificables, sobre las que es problemática la previsión de efectos.
+       </p>
+        <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image35','','imagenes/ContaminacionSuelo.jpg',1)"><img src="imagenes/Contaminacion.jpg" width="281" height="179" id="Image35"></a>
+     </div>
+   </div>
+   <div data-role="collapsible" align="center">
+    <h2>Contaminacion del Aire</h2>
+     <div>
+       <p>
+        El aire limpio está compuesto principalmente por nitrógeno y oxígeno, en pequeñas proporciones se puede encontrar vapor de agua y dióxido de carbono. La contaminación del aire, proviene de la adición de sustancias emitidas a la atmósfera que causan un desequilibrio en la composición original. El aire contaminado contiene gases, polvos, olores y humos en grandes cantidades que dañan la salud de las personas, animales y plantas. Existen dos tipos de contaminantes:
+       </p>
+        <br>
+       <p>
+        Los que son arrojados directamente a la atmósfera como resultado de un proceso de combustión se llaman contaminantes primarios, estos son: dióxido de azufre, monóxido de carbono, vapores de combustibles y partículas suspendidas.
+       </p>
+         <br>
+       <p>
+        Una vez en el aire, algunos contaminantes primarios reaccionan con otros compuestos y forman contaminantes de igual o mayor toxicidad, estos se denominan contaminantes secundarios.
+       </p>
+        <br>
+       <p>
+        La contaminación daña de diferente manera la salud de los individuos dependiendo de su nivel de exposición a los contaminantes, de su capacidad y de su resistencia física.
+       </p>
+        <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image36','','imagenes/ContaminacionAire.jpg',1)"><img src="imagenes/Contaminacion.jpg" width="281" height="179" id="Image36"></a>
+     </div>
+    </div>
+    <div data-role="collapsible" align="center">
+    <h2>Contaminacion del Agua</h2>
+     <div>
+       <p>
+        La contaminación del agua se produce a través de la introducción directa o indirecta en los acuíferos o cauces de agua de diversas sustancias que pueden ser consideradas como contaminantes.
+       </p>
+        <br>
+       <p>
+        En el ambiente laboral e industrial el agua contaminada puede producir daños de salud a los trabajadores, las vías de penetración del agua contaminada en el ser humano son.
+       </p>
+         <br>
+       <p>
+        Como sabemos, la contaminación del agua no sólo afecta a los propios humanos en sí, sino a la fauna y a los diferentes seres vivos que pueden vivir en la misma. Eso sin contar que el agua contaminada puede ser portadora de una gran variedad de enfermedades, algunas de ellas mortales.
+       </p>
+        <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image37','','imagenes/ContaminacionAgua.jpg',1)"><img src="imagenes/Contaminacion.jpg" width="281" height="179" id="Image37"></a>
+     </div>
+    </div>
+    <div data-role="collapsible" align="center">
+    <h2>Contaminacion Auditiva</h2>
+     <div>
+       <p>
+        Se le llama contaminación auditiva al exceso de sonido que altera las condiciones normales de ambiente en una determinada zona si bien el ruido no se acumula ni se traslada o se mantiene en el ambiente o atreves del tiempo como las otras contaminaciones pero no deja de ser tan dañina como las otras contaminaciones que si se mantienen y se acumulan y sin en cambio también pueden causar grandes daños a la salud y la calidad de vida de las personas si se controla adecuadamente aunque todavía no nos hemos dado cuenta del todo de esta contaminación vivir en una ciudad tiene muchas ventajas pero también puede traer serias afecciones en la salud.
+       </p>
+        <br>
+       <p>
+        Por los altos niveles de ruido, cuatro de cada cinco habitantes de las ciudades industrializadas padecen alguna deficiencia auditiva en la sociedad sin embargo son pocos los que se percatan de su problema.
+       </p>
+         <br>
+       <p>
+        Invisible e irreversible es el camino que conduce a la sordera, y lo más grave es que las personas se acostumbran al ruido nocivo y lo ven como parte de su vida.
+       </p>
+        <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image38','','imagenes/ContaminacionAgustica.jpg',1)"><img src="imagenes/Contaminacion.jpg" width="281" height="179" id="Image38"></a>
+     </div>
+    </div>
+    <div data-role="collapsible" align="center">
+    <h2>Contaminacion Visual</h2>
+     <div>
+       <p>
+        Alteración visual de la imagen y fisonomía del entorno urbano causada por acumulación de materia prima, productos, desechos, abandono de edificaciones y bienes materiales, así como, violación en las densidades y características físicas de publicidad.
+       </p>
+        <br>
+       <p>
+        Nuestro cerebro tiene una determinada capacidad de absorción de datos. Los sentidos son los encargados de transmitir al cerebro toda información que perciben del entorno. Entre ellos, el sentido de la vista es uno de los más complejos y de los que mayor incidencia tiene en la percepción global del entorno y, por lo tanto, en las reacciones psicofísicas del hombre.
+       </p>
+         <br>
+       <p>
+        Cuando una imagen supera el máximo de información que el cerebro puede asimilar, se produce una especie de “stress” visual, el panorama perceptual se vuelve caótico y la lectura ordenada del paisaje se hace imposible.
+       </p>
+       <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image39','','imagenes/ContaminacionVisual.jpg',1)"><img src="imagenes/Contaminacion.jpg" width="281" height="179" id="Image39"></a>
+     </div>
+    </div>
+   </div>
+   <div data-role="footer" data-theme="a" align="center" data-position="fixed">
+    <h4>Aplicacion Dos</h4>
+     <img src="imagenes/Places-trash-full-icon.png" width="46" height="46">
+    <h4>Alfonso Miguel Perez Faustino</h4>
+   </div>
+</div>
+
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>Forma de Actuar</h1>
+   </div>
+   <div data-role="content" align="center">
+      <h2>Como Podemos Evitar la Contaminacion</h2>
+       <p>
+        La contaminación ambiental es un problema mundial muy grave, sobre todo en los grandes centros urbanos donde muchas personas tienen problemas de salud debido a la contaminación. Hay muchas formas en que podemos evitar la contaminación, como por ejemplo evitar circular por avenidas con mucho trafico, en la medida de lo posible.
+       </p>
+        <img src="imagenes/Descargado3.jpg"/>
+     <br>
+       <p>
+        Pero también es muy importante que cada uno de nosotros tomemos conciencia del problema de la contaminación. Si todos los habitantes de una gran ciudad fueran conscientes de que la solución para la contaminación está en cada uno, en gran parte el problema estaría resuelto.
+       </p>
+        <img src="imagenes/Descargado.jpg"/>
+     <br>
+       <p>
+        Lo ideal para evitar la contaminación sería directamente mudarnos a una zona libre de contaminación. Es una medida drástica pero que muchas personas la llevan a cabo.
+       </p>
+        <br>
+       <p>
+        A veces los mismos médicos recomiendan a un paciente un cambio de aire, que puede mejorar mucho una situación de asma, alergias difíciles o alguna enfermedad respiratoria por ejemplo.
+       </p>
+        <br>
+       <p>
+        Aunque de alguna manera esto significa dar la espalda al problema. Podemos quedarnos en la ciudad y procurar no contaminar, y buscar una conciencia ecológica que cuide el medio ambiente. Está en cada uno de nosotros evitar la contaminación. ¿Cómo? Preferir la bicicleta o caminar antes que el automóvil es una buena forma de comenzar, no solamente estaremos contribuyendo con el medio ambiente, sino que nos traerá un beneficio en nuestra calidad de vida.
+       </p>
+       <p>
+        Los mayores contaminantes que los humanos producimos de a toneladas diarias proviene principalmente de los envases de todo lo que consumimos, entonces deberíamos elegir aquellos productos que vienen envasados con elementos biodegradables derivados del papel como el cartón o por ejemplo, y podemos usar envases retornables para tomar nuestra bebida gaseosa preferida.
+       </p>
+        <img src="imagenes/Descargado2.jpg"/>
+   </div>
+   <div data-role="footer" data-theme="a" align="center" data-position="fixed">
+    <h4>Aplicacion Dos</h4>
+     <img src="imagenes/Places-trash-full-icon.png" width="46" height="46">
+    <h4>Alfonso Miguel Perez Faustino</h4>
+   </div>
+</div>
+
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Contaminacion en mi comunidad y como solucionarlo</h1>
+   </div>
+   <div data-role="content" align="center">
+   <h2>Contaminacion del Suelo</h2>
+    <p>
+     Uno de los principales contaminantes de mi comunidad es la basura como vasos de plasticos, bolsas de compras y otros tipos de contaminates, el cual se produce a travez de festejos que hacen las familias ya sea en sus hogares o en cualquier otro lugar.
+    </p>
+     <br>
+    <p>
+     Pero el verdadero problema es la basura que dejan despues de terminar un festejo lo cual causa que las calles se llenen de basura
+    </p>
+     <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image33','','imagenes/CAM01543.jpg',1)"><img src="imagenes/Contaminacion.jpg" width="281" height="179" id="Image33"></a>
+     <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image34','','imagenes/CAM01541.jpg',1)"><img src="imagenes/Contaminacion.jpg" width="281" height="179" id="Image34"></a> <br>
+   <h2>Casas y bardas Pintadas</h2>
+    <p>
+     Otro de los problemas es la Contaminacion Visual como en las paredes de hogares y de la iglesia pintadas por todos lados por el bandalismo que se encuentra en las noches.
+    </p>
+     <br>
+    <p>
+     Al pasar esto se pierde todo lo que se quiere dar a conocer acerca de lo que es nuestra comunidad.
+    </p>
+     <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image31','','imagenes/CAM01545.jpg',1)"><img src="imagenes/Contaminacion.jpg" width="281" height="179" id="Image31"></a>
+     <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image32','','imagenes/CAM01544.jpg',1)"><img src="imagenes/Contaminacion.jpg" width="281" height="179" id="Image32"></a>
+     <br>
+   <h2>Como Solucionarlo</h2>
+    <p>
+     Para que esto no pase se tedra que dar razonamiento con base en folletos que se les dara pasando a cada casa y darles a conocer como seria nuestra comunidad sin estos problemas que suceden en nuestra comunidad
+    </p>
+     <br>
+    <p>
+     Y tambien se hara en las escuelas para darles a conocer a los jovenes y niños que es lo que se esta perdiendo.
+    </p>
+     <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image30','','imagenes/Reciclage.jpg',1)"><img src="imagenes/Contaminacion.jpg" width="281" height="179" id="Image30"></a>
+   </div>
+   <div data-role="footer" data-theme="a" align="center" data-position="fixed">
+    <h4>Aplicacion Dos</h4>
+     <img src="imagenes/Places-trash-full-icon.png" width="46" height="46">
+    <h4>Alfonso Miguel Perez Faustino</h4>
+   </div>
+</div>
+
+</div>
+</body>
+</html>
